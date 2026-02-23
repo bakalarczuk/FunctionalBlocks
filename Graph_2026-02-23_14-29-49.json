@@ -1,0 +1,268 @@
+{
+    "formatVersion": 1,
+    "startBlockId": "start",
+    "variables": [
+        {
+            "name": "xValue",
+            "value": {
+                "type": 0,
+                "number": 3.0,
+                "boolean": false,
+                "vector3": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "text": ""
+            }
+        }
+    ],
+    "blocks": [
+        {
+            "id": "start",
+            "type": 0,
+            "nextId": "create1",
+            "trueNextId": "",
+            "falseNextId": "",
+            "primitiveType": 0,
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotationEuler": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "outObjectVar": "",
+            "transformKind": 0,
+            "transformMode": 0,
+            "targetObjectVar": "",
+            "vector": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "varName": "",
+            "number": 0.0,
+            "aVar": "",
+            "compareOp": 0,
+            "bIsConstant": false,
+            "bConst": 0.0,
+            "bVar": "",
+            "outBoolVar": "",
+            "conditionVar": ""
+        },
+        {
+            "id": "create1",
+            "type": 1,
+            "nextId": "compare",
+            "trueNextId": "",
+            "falseNextId": "",
+            "primitiveType": 0,
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotationEuler": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "outObjectVar": "cube1",
+            "transformKind": 0,
+            "transformMode": 0,
+            "targetObjectVar": "",
+            "vector": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "varName": "",
+            "number": 0.0,
+            "aVar": "",
+            "compareOp": 0,
+            "bIsConstant": false,
+            "bConst": 0.0,
+            "bVar": "",
+            "outBoolVar": "",
+            "conditionVar": ""
+        },
+        {
+            "id": "compare",
+            "type": 4,
+            "nextId": "if",
+            "trueNextId": "",
+            "falseNextId": "",
+            "primitiveType": 0,
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotationEuler": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "outObjectVar": "",
+            "transformKind": 0,
+            "transformMode": 0,
+            "targetObjectVar": "",
+            "vector": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "varName": "",
+            "number": 0.0,
+            "aVar": "xValue",
+            "compareOp": 3,
+            "bIsConstant": true,
+            "bConst": 2.0,
+            "bVar": "",
+            "outBoolVar": "cond",
+            "conditionVar": ""
+        },
+        {
+            "id": "if",
+            "type": 5,
+            "nextId": "",
+            "trueNextId": "move",
+            "falseNextId": "scale",
+            "primitiveType": 0,
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotationEuler": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "outObjectVar": "",
+            "transformKind": 0,
+            "transformMode": 0,
+            "targetObjectVar": "",
+            "vector": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "varName": "",
+            "number": 0.0,
+            "aVar": "x",
+            "compareOp": 2,
+            "bIsConstant": true,
+            "bConst": 2.0,
+            "bVar": "",
+            "outBoolVar": "",
+            "conditionVar": "cond"
+        },
+        {
+            "id": "move",
+            "type": 2,
+            "nextId": "",
+            "trueNextId": "",
+            "falseNextId": "",
+            "primitiveType": 0,
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotationEuler": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "outObjectVar": "",
+            "transformKind": 0,
+            "transformMode": 1,
+            "targetObjectVar": "cube1",
+            "vector": {
+                "x": 0.0,
+                "y": 1.0,
+                "z": 0.0
+            },
+            "varName": "",
+            "number": 0.0,
+            "aVar": "",
+            "compareOp": 2,
+            "bIsConstant": false,
+            "bConst": 0.0,
+            "bVar": "",
+            "outBoolVar": "",
+            "conditionVar": "cond"
+        },
+        {
+            "id": "scale",
+            "type": 2,
+            "nextId": "",
+            "trueNextId": "",
+            "falseNextId": "",
+            "primitiveType": 0,
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "rotationEuler": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "outObjectVar": "",
+            "transformKind": 2,
+            "transformMode": 0,
+            "targetObjectVar": "cube1",
+            "vector": {
+                "x": 2.0,
+                "y": 2.0,
+                "z": 2.0
+            },
+            "varName": "",
+            "number": 0.0,
+            "aVar": "",
+            "compareOp": 2,
+            "bIsConstant": false,
+            "bConst": 0.0,
+            "bVar": "",
+            "outBoolVar": "",
+            "conditionVar": ""
+        }
+    ]
+}
